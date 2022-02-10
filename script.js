@@ -43,7 +43,19 @@ function generatePassword () {
   if (!passwordCase && !passwordLower && !passwordNum && !passwordSpecial) {
     return "You must select at least 1 criteria to generate a password."
   }
+
+  console.log(response)
+var password = ""
+  for (var i = 0; i < passwordLength; i++) {
+    password += response[Math.floor(Math.random()*response.length)]
+  }
+console.log(password)
+
 }
+
+
+
+
 
 
 
