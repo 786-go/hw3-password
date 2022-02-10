@@ -50,7 +50,7 @@ var password = ""
     password += response[Math.floor(Math.random()*response.length)]
   }
 console.log(password)
-
+return password
 }
 
 
