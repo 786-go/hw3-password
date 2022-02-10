@@ -16,7 +16,7 @@ function writePassword() {
 function generatePassword () {
   var passwordLength = parseInt(prompt("Enter password length"))
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
-    return "Please enter a proper password that satisfies the criteria." 
+    return "Your password must be at least 8 characters and not more than 128 characters." 
   }
   var passwordCase = confirm("Do you want to have capital letters in your password?")
   var passwordLower = confirm("Do you want to have lower case letters in your password?")
